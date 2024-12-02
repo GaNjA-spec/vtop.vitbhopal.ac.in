@@ -956,10 +956,11 @@ Approved   by [ 100254 ] [ KANNAN S ] </td>
 									var tableName="LeaveHistoryTable";
 									$('#'+tableName).DataTable(
 											{
-											    "scrollX": true,
-											     autoWidth: false,
-												"searching": false,         // Disables the search box
-												    dom: 'rt<"bottom"p>',
+											    "scrollX": true,              // Enables horizontal scrolling
+											    autoWidth: false,             // Disables auto-width adjustment
+											    "searching": false,          // Disables the search box
+											    "paging": true,              // Ensures pagination is enabled
+											    "dom": 'rt<"bottom"p>'
 											});
 								});
 							/*]]>*/
